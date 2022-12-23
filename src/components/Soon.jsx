@@ -7,7 +7,7 @@ export default function soon() {
           <source src={videoIntro} />
         </video>
         <div className='videoContent'>
-        <h1><span>Coming soon</span><span>Kian film production</span></h1>
+        <h1><span>Coming soon</span><span>kiAn production</span></h1>
       
         </div>
     </div>

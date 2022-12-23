@@ -1,5 +1,6 @@
 import React from 'react'
 import {useLocation,NavLink} from "react-router-dom";
+import logo from "../images/logo-kiAn.png"
 export default function Navbar() {
     const links = [
         {key:"films",value:"films"},
@@ -13,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar navbar-expand-md navbar-dark ${pathname !== "/" ? "background-black" :"position-absolute center-logo-class"} py-3`}>
     <div className={`${pathname !== "/" ? "container-fluid d-flex flex-md-column gap-md-3" : "container-fluid justify-content-center"}`}>
-      <a className="navbar-brand" href="/"><img src="https://ik.imagekit.io/kianfilm/logo_5f00wEN2p.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1666182290460" alt="logo" /></a>
+      <a className="navbar-brand" href="/"><img src={logo} alt="logo" /></a>
       {pathname !== "/" ? <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button> : null}

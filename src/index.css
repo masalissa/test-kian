@@ -118,7 +118,9 @@ svg {
 .nav-link:focus, .nav-link:hover{
     background-color:var(--clr-white-400);
 }
-
+.navbar-brand{
+  width: 100px;
+}
 
 /* home page */
 .home-section{
