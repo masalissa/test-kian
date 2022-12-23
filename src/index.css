@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+/* Coming soon font  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@font-face { font-family: black-past; 
+  src: url('/font/BlackpastDemo-vm2l9.ttf'); } 
+:root{
+    --red : red;
+    --fs-heading-lg : 60px;
+    --fonthedings : 40px;
+    --gray-linergrident: linear-gradient(148.23deg, rgba(0, 0, 0, 0.7) 3.3%, rgba(0, 0, 0, 0) 100%);
+    --clr-black-100:rgba(232, 232, 232, 0.1);
+    --clr-black-900:black;
+    --clr-white-900:white;
+    --clr-white-400:rgba(232, 232, 232, 0.2);
+}
+ 
+.background-black{
+    background-color: var(--clr-black-900);
+}
+    
+/* @media screen and (max-width:500px) {
+    :root{
+        --red:blue;
+        --fs-heading-lg:20px
+    }
+} */
+/* body{
+   background: var( --red);
+
+} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.navbar{
+  z-index: 999;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    background-color:var(--clr-white-900);
+    color:var(--clr-black-900);
+}
+.nav-link:focus, .nav-link:hover{
+    background-color:var(--clr-white-400);
+}
+
+
+/* home page */
+.home-section{
+width: 100%;
+height: 100vh;
+
+}
+.home-video{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.center-logo-class{
+  top:10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.center-txt{
+position: absolute;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+}
+
+.center-txt h1{
+  font-size: 80px;
+  /* font-family: 'PT Serif', serif; */
+  font-family: 'Berkshire Swash', cursive;
+  color:rgb(196, 190, 190);
+  text-shadow: 0 0 3px black;
+  letter-spacing: 5px;
+}
+.center-txt p{
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 7px;
+  /* font-family: 'PT Serif', serif; */
+  font-family: 'Bad Script', cursive;
+  font-style: italic;
+  color: white;
+  
+  
+}
+
+.social-media-icons{
+position: absolute;
+left: 50%;
+bottom: 20px;
+transform: translate(-50%,-50%);
+}
+
+.hover{
+  /* rgba(245, 222, 179, 0.37)
+    color: black
+  */
+  background-color: gray;
+  color: black;
+  font-size: 13px;
+
+}
+
+.hover:hover{
+  color:black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+.btn-font{
+  font-family: 'McLaren', cursive;
+  font-size: larger;
+  
+  letter-spacing: 3px;
+}
+
+.btn-font a:hover{
+  color:black;
+}
+.btn-outline-light:hover{
+  background-color: gray;
+  color:black;
+}
+
+
+/* footer component */
+
+.footer-general{
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+}
+
+
+/* contact page  */
+.container{
+  padding-bottom: 100px;
+}
+.contact-info{
+  background:linear-gradient(120deg,grey,white);
+  
+  border-bottom-right-radius: 0;
+  padding: 30px;
+}
+
+.inputField{
+  border-width: 0;
+  border-bottom: 2px solid lightgray;
+  outline: none;
+  margin-top: 50px;
+}
+
+.inputField:focus{
+  border-bottom: 2px solid black;
+  
+}
+
+.circal{
+  position: absolute;
+  width: 70%;
+  box-shadow: 0 0 10px black;
+ border:1px solid black;
+  background:linear-gradient(30deg,white,black);
+  border-radius: 60%;
+  height: 70%;
+  bottom: -155px;
+  right: -250px;
+}
+
+.over-flow{
+  overflow: hidden;
+  height: 500px;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+}
+.border-radius-20{
+  border-radius: 20px;
+}
+
+
+.padding{
+  padding:80px;
+}
+
+/* carts */
+.images-carts{
+height:250px;
+object-fit: cover;
+}
+
+.border-effect{
+  border:1px solid gray;
+  box-shadow: 0 0 3px wheat;
+}
+
+.border-effect-sliders{
+  box-shadow: 0 0 10px 5px rgb(145, 141, 141);
+  border-radius: 10px 100px 10px 50px;
+}
+.details p{
+  font-family: 'Carter One', cursive;
+}
+@media screen and (max-width:767px) {
+  .over-flow{
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .circal{
+    position: absolute;
+    right:-30%;
+    bottom: -30%;
+  }
+}
+@media screen and (max-width:400px) {
+  .circal{
+  display: none;
+  }
+}
+
+
+ .line{
+  display: none;
+ width: 50%;
+ height: 2px;
+ background-color: gray;
+ margin:80px auto;
+  
+} 
+
+.input-under-line{
+  border:none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  resize: none;
+}
+.input-under-line:focus{
+  box-shadow: 0 0 10px gray;
+  border-radius: 5px;
+  border-color:transparent;
+}
+@media screen and (max-width:768px) {
+  .line{
+    display: block;
+  }
+}
+
+
+/* this is intro */
+.videoContainer{
+  width: 100%;
+  height: 100vh;
+position: relative;
+
+}
+
+
+.videoIntro{
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
+}
+
+.videoContent{
+position: absolute;
+width: 100%;
+height: 100%;
+
+top:0;
+left:0;
+
+z-index: 337;
+font-weight: 700;
+background-color: rgba(0, 0, 0, 0.137);
+padding: 1.5rem;
+backdrop-filter: blur(1px);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.videoContent h1{
+  line-height: 1.3;
+}
+.videoContent h1 span:nth-child(1){
+  font-size: 8rem;
+  color:whitesmoke;
+  letter-spacing: -4px;
+  font-family: black-past;
+}
+.videoContent h1 span:nth-child(2){
+display: block;
+text-align: end;
+
+color:khaki;
+width: fit-content;
+margin-left: auto;
+font-family: 'Dancing Script', cursive;
+font-size: 3.5rem;
+}
+
