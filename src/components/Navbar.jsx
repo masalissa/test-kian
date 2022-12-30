@@ -1,6 +1,6 @@
 import React from 'react'
 import {useLocation,NavLink} from "react-router-dom";
-import kiAnLogo from "../images/logo-kiAn.png"
+import kiAnLogo from "../images/logo-kiAn-zonder-text.png"
 export default function Navbar() {
     const links = [
         {key:"films",value:"films"},
